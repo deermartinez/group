@@ -45,14 +45,28 @@
   
 }
 
-img{
+.img{
     width: 300px;
     height: 300px;
     transition-property: color, background-color,transform;
     transition-duration: 4s;
+    transition-delay:0;
 }
 
-img{
-    background-color: rgba(0, 0, 0, 0.966);
+img:hover{
+    background-color: rgb(0, 0, 0);
     color:black;
+    transform: translateX(-20px);
+}
+
+.drop{
+    transition-property: color, background-color,transform;
+    transition-duration: 4s;
+    transition-delay:0;
+}
+
+
+nav li:hover{
+    transform: scale(2,3);
+
 }
