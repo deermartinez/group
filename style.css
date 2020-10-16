@@ -25,6 +25,11 @@
   
 }
 
+.card img{
+    height:200px;
+}
+
+
 .container3{
     display: flex;
     justify-content: center;
@@ -45,7 +50,7 @@
   
 }
 
-.img{
+img{
     width: 300px;
     height: 300px;
     transition-property: color, background-color,transform;
@@ -69,4 +74,71 @@ img:hover{
 nav li:hover{
     transform: scale(2,3);
 
+}
+
+ul.submenu{
+    display:none;
+}
+
+.yes:hover+ul.submenu,ul.submenu:hover{
+    display:block;
+}
+
+/* media query */
+/* width covers 0-480 pixels---phone */
+@media screen and (max-width:480px){ 
+    nav{
+
+        <nav class="horixontal">
+        <ul class="mainmenu">
+            <li><a href="yes.html">Home</a>
+            <ul class="submenu">
+                <li><a href="index.html">My first rough draft</a></li>
+                
+            </ul>
+            </li>
+            
+            <li><a href="yes.html">Home</a>
+                <ul class="submenu">
+                    <li><a href="index.html">My first rough draft</a></li>
+                    
+            </ul>
+            </li>
+
+            
+            <li><a href="yes.html">Home</a>
+                <ul class="submenu">
+                    <li><a href="index.html">My first rough draft</a></li>
+                    
+            </ul>
+            </li>
+        </ul>
+    </nav>
+        
+
+    }
+    
+    body{
+        background-color: rgb(112, 223, 160);
+        
+    }
+
+
+}
+
+/* media query with a min width of 760px for a tablet */
+/* covers 481-768px */
+@media screen and (min-width: 780px){
+    body{
+        background-color: rgb(235, 145, 145);
+    }
+}
+/* min width of 1025px */
+/* width covers 765-1025px
+anything greater that 1025 */
+
+@media screen and (min-width: 1025px){
+    body{
+        background-color:rgb(162, 111, 167);
+    }
 }
