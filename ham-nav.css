@@ -1,0 +1,75 @@
+body{
+    background-color: gray
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(79, 36, 197);
+    transition-property: transform, font-size;
+    transition-duration: 3s;
+
+    
+}
+
+h1:hover {
+    font-size:  60px;
+    transform: translateX(20px);
+}
+
+.nav{
+    text-align: left;
+    height: 50px;
+    line-height: 60px;
+
+}
+
+
+@media screen and (max-width: 510px){
+
+    label{
+        display: block;
+
+    }
+    .menu{
+        text-align: left;
+        width: 100%;
+        display: none;
+        color: orchid;
+    }
+    .menu a {
+        display: block;
+        margin: 0px;
+        font-size: 25px;
+
+    }
+
+    #toggle:checked + .menu{
+        display: block;
+    }
+}
+
+@media screen and (max-width:1024px){
+    label{
+        display: block;
+
+    }
+    .menu{
+        text-align: left;
+        width: 100%;
+        display: none;
+        color: sandybrown
+    }
+    .menu a {
+        display: block;
+        margin: 0px;
+        font-size: 25px;
+
+    }
+
+    #toggle:checked + .menu{
+        display: block;
+    }
+
+}
+

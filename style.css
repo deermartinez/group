@@ -103,7 +103,8 @@ ul.submenu{
 /* width covers 0-480 pixels---phone */
 @media screen and (max-width: 480px) {
     body {
-      background-color:white(255, 255, 255);
+      background-color:red;
+      color:black;
      } 
 
    }
